@@ -31,7 +31,7 @@ libraryForm.addEventListener('submit', e => {
     myLibrary.push(newbook);
    
     dispalyBooks();
-    // clearfield();
+    clearfield();
  
  }
 function dispalyBooks(){
