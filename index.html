@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Library</title>
+</head>
+<body>
+    <div class="form">
+        <form action="" class="libraryForm">
+            <h1>Add Book</h1>
+            <div class="newbooktitle">
+                <label for="booktitle">Enter Book Name:</label>
+                <input type="text" name="book-title" id="booktitle">
+            </div>
+            <div class="newbookauthor">
+                <label for="bookauthor">Enter Book author:</label>
+                <input type="text" name="bookauthor" id="bookauthor">
+            </div>
+            <!-- <div>
+                <label for="isread">Have you read this book?</label>
+                <select name="isread" id="isread">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select> -->
+                <div class="formbtn">
+                    <input type="submit" class="sumbitbtn" value="Add your Book">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="table">
+        <table class="list-table">
+            <thead>
+                <tr>
+                    <!-- <th scope="col">SN</th> -->
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+    
+                    <th scope="col"></th>
+
+                </tr>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
