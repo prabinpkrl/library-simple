@@ -17,7 +17,7 @@ form.addEventListener("submit", Event => {
 
  addBookToLibrary(newbook);
 
- form.reset;
+ 
  
 });
 
@@ -27,7 +27,13 @@ function addBookToLibrary(newbook){
     myLibrary.push(newbook);
     
     displayBooks();
+    clearform();
         
+}
+
+function clearform(){
+    const bookTitle = document.querySelector('#booktitle').value='';
+    const bookAuthor = document.querySelector('#bookauthor').value='';
 }
 
 
@@ -35,19 +41,33 @@ function displayBooks(){
     const tbody = document.querySelector('#table-body');
     tbody.innerHTML= '';
 
-    myLibrary.forEach(book => {
-        createrow(book)
+    myLibrary.forEach((book,index) => {
+        createrow(book,index)
     });
 }
 
-function createrow(book){
+function createrow(book,index){
     const tbody = document.querySelector('#table-body');
     const row = document.createElement('tr');
 
     row.innerHTML = `
     <td>${book.title}</td>
-    <td>${book.author}</td>  
+    <td>${book.author}</td>
+    <td <button id="delete">Delete</button></td>  
     `;
     tbody.appendChild(row);
 
+document.querySelector('table').addEventListener('click', Event =>{
+    if(Event.target.textContent === 'Delete'){
+        deleteBook(index);
+    }
+});
+
+}
+
+function deleteBook(index){
+    console.log(index);
+    myLibrary.splice(index, 1)
+    displayBooks();
+        
 }
