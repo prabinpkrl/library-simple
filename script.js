@@ -53,12 +53,13 @@ function createrow(book,index){
     row.innerHTML = `
     <td>${book.title}</td>
     <td>${book.author}</td>
-    <td <button id="delete">Delete</button></td>  
+    <td><button class="delete" data-index="${index}">Delete</button></td>  
     `;
     tbody.appendChild(row);
 
 document.querySelector('table').addEventListener('click', Event =>{
     if(Event.target.textContent === 'Delete'){
+        const index = Event.target.getAttribute("data-index")
         deleteBook(index);
     }
 });
