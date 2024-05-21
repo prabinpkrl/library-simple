@@ -73,7 +73,7 @@ function deleteBook(index) {
 
 }
 
-//show dialog
+//show and close dialog
 const dialog = document.querySelector('dialog');
 const showBtn = document.querySelector('.showformbtn');
 const closeBtn = document.querySelector('.sumbitbtn')
