@@ -1,0 +1,63 @@
+body{
+    margin: 0;
+    padding:0;
+}
+.whole-container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+
+}
+.header-text{
+    text-align: center;
+}
+
+table,td,th{
+    /* border: 1px solid black; */
+    border-collapse: collapse; 
+    padding: 20px;
+    font-size: 20px;  
+}
+th{
+    font-size: 25px;
+    background: wheat;
+}
+.list-table{
+    margin-top: 20px;
+    padding: 20px;
+    width: 100%;
+    table-layout: fixed;
+    width:100%;
+    white-space: nowrap;
+}
+.list-table td{
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-table tr:nth-child(even){
+    background: lightblue;
+}
+
+.row-id{
+    width: 10%;
+}
+.row-empty{
+    width: 10% ;
+}
+
+.list-table tr:nth-child(odd){
+    background: lightcyan;
+}
+
+.add-book-btn{
+    margin-top: 25px;
+    padding: 10px;
+}
+.showformbtn{
+    padding: 10px;
+    background: rgb(36, 216, 45);
+    border: none;
+    border-radius: 5px;
+}
