@@ -61,3 +61,37 @@ th{
     border: none;
     border-radius: 5px;
 }
+
+/* dialog box  */
+
+form h1{
+    text-align: center;
+}
+.sumbitbtn{
+    padding: 5px;
+    margin: 10px;
+    background-color:aqua ;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+label{
+    font-size: large;
+    font: bold;
+
+}
+
+input{
+    padding: 5px;
+    font-size: medium;
+    font: bold;
+    cursor:text;
+}
+.newbooktitle, .newbookauthor{
+    margin: 5px 0;
+}
+::backdrop{
+    background-color: rgb(17, 106, 184);
+    opacity: 0.2;
+}
